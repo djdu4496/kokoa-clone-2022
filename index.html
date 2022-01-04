@@ -4,9 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KoKoa-Talk</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Welcome to Kokoa Talk</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <i class="fas fa-wifi"></i><!-- Wifi Icon -->
+    </div>
+    <div class="status-bar__column">
+      <span class="clock">18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <i class="fas fa-lock"></i><!-- Lock Icon -->
+      <span>11%</span>
+      <i class="fas fa-battery-quarter"></i><!-- Battery Icon -->
+      <i class="fas fa-bolt"></i><!-- LighteningIcon -->
+    </div>
+  </div>
+  <header class="welcome-header">
+    <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
+    <p class="welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
+  </header> 
+
+  <form id="login-form">
+    <input type="text" 
+      placeholder="Email or phone number"
+    />
+    <input type="password" 
+      placeholder="Password"
+    />
+    <input type="submit" 
+      value="Log In"
+    />
+    <input type="submit"
+      value="Sign Up"
+    >
+    <a href="#">Find Kokoa Account or Password</a>
+  </form>
+  <script src="https://kit.fontawesome.com/f9cacc2044.js" crossorigin="anonymous"></script>
 </body>
 </html>
