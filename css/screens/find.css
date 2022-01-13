@@ -1,0 +1,127 @@
+.find__icons {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.find__icons__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find__icon__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90px;
+}
+
+.find__icon-title {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  display: block;
+  margin-top: 25px;
+}
+
+.recommended-friends__content {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 22px;
+  display: block;
+  margin: 125px 0;
+  text-align: center;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.open-chat__header h4 {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.open-chat:not(h4) {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__title {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+.open-post__hashtag {
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.open-post__profile {
+  display: flex;
+  align-items: center;
+}
+
+.open-post__profile img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__profile-count {
+  font-size: 14px;
+}
+
+.open-post__profile .divider {
+  width: 2px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.open-post__profile-status {
+  color: #ffb0e0;
+}
+.open-post__thumbnail {
+  position: relative;
+}
+.open-post__thumbnail img {
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.open-post__thumbnail div {
+  position: absolute;
+  padding: 5px 10px;
+  bottom: 8px;
+  right: 8px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}

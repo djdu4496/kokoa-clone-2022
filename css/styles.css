@@ -9,6 +9,7 @@
 /* screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -16,6 +17,6 @@ body {
   color: #2f363e;
 }
 
-.chats-screen {
+.main-screen {
   padding: 0 var(--horizontal-space);
 }
