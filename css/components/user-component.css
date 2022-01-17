@@ -52,3 +52,7 @@
   display: block;
   margin-bottom: 10px;
 }
+
+.user-component__subtitle i {
+  color: #ff5d4b;
+}

@@ -1,0 +1,21 @@
+.icon-row {
+  box-sizing: border-box;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 65px);
+  column-gap: 55px;
+  padding: 0 20px;
+}
+.icon-row__icon {
+  text-align: center;
+  max-width: max-content;
+  min-width: min-content;
+}
+
+.icon-row__icon span {
+  display: block;
+  padding-top: 15px;
+  text-align: center;
+}
