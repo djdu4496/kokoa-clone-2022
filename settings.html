@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <title>Chats - Kokoa Clone</title>
+  <title>Settings - Kokoa Clone</title>
 </head>
+
 <body>
   <div class="status-bar">
     <div class="status-bar__column">
@@ -23,51 +25,52 @@
       <i class="fas fa-bolt"></i><!-- LighteningIcon -->
     </div>
   </div>
-  <header class="screen-header">
-    <h1 class="screen-header__title">Chats</h1>
-    <div class="screen-header__icons">
-      <span class="screen-header__icon">
-        <i class="far fa-search fa-lg"></i>
-      </span>
-      <span class="screen-header__icon">
-        <i class="far fa-comment-plus fa-lg"></i>
-      </span>
-      <span class="screen-header__icon">
-        <i class="far fa-music fa-lg"></i>
-      </span>
-      <span class="screen-header__icon">
-        <a href="settings.html">
-          <i class="far fa-cog fa-lg"></i>
-        </a>
-      </span>
+  <header class="alt-screen-header">
+    <div class="alt-screen-header__column">
+      <a href="javascript:history.back()">
+        <i class="fas fa-angle-left fa-3x"></i>
+      </a>
+    </div>
+    <div class="alt-screen-header__column">
+      <h1 class="alt-screen-header__title">Settings</h1>
+    </div>
+    <div class="alt-screen-header__column">
+      <i class="far fa-search fa-2x"></i>
     </div>
   </header>
   <main class="main-screen">
-    <div class="user-component">
-      <div class="user-component__column">
-        <img 
-        src="https://avatars.githubusercontent.com/u/55142939?v=4" 
-        alt="" 
-        class="user-component__avatar user-component__avatar" 
-        />
-        <div class="user-component__text">
-          <h4 class="user-component__name">JiWoo</h4>
-          <h6 class="user-component__subtitle">코딩공부 빡세게 하자</h6>
+    <ul class="settings__list">
+      <div class="settings__setting">
+        <div class="settings__setting-column">
+          <i class="fad fa-megaphone"></i>
+          <span>Notices</span>
         </div>
+        <div class="settings__setting-column"></div>
       </div>
-      <div class="user-component__column">
-        <span class="user-component__time">21:22</span>
-        <div class="badge">1</div>
+      <div class="settings__setting">
+        <div class="settings__setting-column">
+          <i class="fad fa-flask"></i>
+          <span>KaKao Lab</span>
+        </div>
+        <div class="settings__setting-column"></div>
       </div>
-    </div>
-  </main> 
+      <div class="settings__setting">
+        <div class="settings__setting-column">
+          <i class="fad fa-info-circle"></i>
+          <span>Version</span>
+        </div>
+        <div class="settings__setting-column">Latest Version</div>
+      </div>
+    </ul>
+  </main>
+
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
       <li class="nav__btn">
         <a class="nav__link" href="chats.html">
           <span class="nav__notification badge">1</span>
-          <i class="fas fa-comment fa-2x"></i>
+          <i class="far fa-comment fa-2x"></i>
         </a>
       </li>
       <li class="nav__btn"><a class="nav__link" href="find.html"><i class="far fa-search fa-2x"></i></a></li>
@@ -76,4 +79,5 @@
   </nav>
   <script src="https://kit.fontawesome.com/d853531405.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
