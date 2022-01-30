@@ -1,14 +1,20 @@
+.more-screen {
+  box-sizing: border-box;
+}
+
 .more-screen .icon-row {
   margin-top: 35px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 65px);
+  column-gap: 35px;
   row-gap: 55px;
+  padding: 0 20px;
 }
-.more-screen .icon-row i {
+.more-screen .icon-row__icon i {
   color: royalblue;
 }
 
-.more-screen .icon-row .icon-row-title {
+.more-screen .icon-row-title {
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -23,15 +29,20 @@
 }
 
 .more-suggestions__icons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 65px);
+  padding: 0 10px;
+  column-gap: 20px;
 }
 
 .more-suggestions__icon {
-  margin-right: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80px;
+  min-width: max-content;
 }
 
 .more-suggestions__icon-image {
@@ -40,7 +51,7 @@
   align-items: center;
   width: 55px;
   height: 55px;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: var(--yellow);
 }
 

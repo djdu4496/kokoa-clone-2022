@@ -6,7 +6,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 65px);
   column-gap: 55px;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 .icon-row__icon {
   text-align: center;
