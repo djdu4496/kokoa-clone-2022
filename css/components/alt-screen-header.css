@@ -6,14 +6,25 @@
   justify-content: center;
 }
 
-.alt-screen-header__column:first-child {
-  margin-right: auto;
+.alt-screen-header__column {
+  width: 33%;
+}
+
+.alt-screen-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
 }
 
 .alt-screen-header__column:last-child {
-  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .alt-screen-header__title {
   font-size: 28px;
   font-weight: 600;
+}
+
+.alt-screen-header__column:nth-child(3) i:last-child {
+  margin-left: 20px;
 }
