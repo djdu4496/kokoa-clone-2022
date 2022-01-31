@@ -34,7 +34,6 @@
 }
 
 #friends-display-link span {
-  font-weight: 700;
   font-size: 28px;
 }
 
@@ -89,9 +88,9 @@
 }
 
 .splash-screen img {
-  height: 300px;
-  width: 80vw;
-  border-radius: 15px;
+  height: 55vw;
+  width: 55vw;
+  border-radius: 50%;
 }
 
 .friends-screen__channel .user-component {

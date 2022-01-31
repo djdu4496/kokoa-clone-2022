@@ -3,15 +3,34 @@
   z-index: 99;
   height: 100vh;
   width: 100vw;
-  background-color: var(--yellow);
+  background-color: #2DC0BD;
   top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
+  color: white;
 }
 
-@media screen and (max-width: 767px) {
+#no-mobile i {
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: var(--yellow);
+}
+
+#no-mobile span:first-child {
+  font-size: 300px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 50px;
+}
+
+#no-mobile span:last-child {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 414px) {
   #no-mobile {
     display: none;
   }

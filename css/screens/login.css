@@ -16,14 +16,13 @@
 }
 
 .welcome-header__title {
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 40px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .welcome-header__text {
-  font-size: 70px;
-  font-weight: 800;
+  font-size: 65px;
   width: 60%;
   min-width: max-content;
   line-height: 85px;
