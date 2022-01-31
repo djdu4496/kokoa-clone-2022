@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <title>Welcome to Kokoa Talk</title>
 </head>
+
 <body>
   <div class="status-bar">
     <div class="status-bar__column">
@@ -26,23 +28,19 @@
   <header class="welcome-header">
     <h1 class="welcome-header__title">Welcome to KokoaTalk</h1>
     <p class="welcome-header__text">If you have a Kakao Account, log in with your email or phone number.</p>
-  </header> 
+  </header>
 
   <form id="login-form" action="friends.html" method="get">
-    <input name="username"type="text" 
-      placeholder="Email or phone number"
-    />
-    <input name="password"type="password" 
-      placeholder="Password"
-    />
-    <input type="submit" 
-      value="Log In"
-    />
-    <input type="submit"
-      value="Sign Up"
-    >
+    <input name="username" type="text" placeholder="Email or phone number" />
+    <input name="password" type="password" placeholder="Password" />
+    <input type="submit" value="Log In" />
+    <input type="submit" value="Sign Up">
     <a href="#">Find Kokoa Account or Password</a>
   </form>
+  <div id="no-mobile">
+    <span>Your screen is too big ㅠㅠ</span>
+  </div>
   <script src="https://kit.fontawesome.com/d853531405.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
