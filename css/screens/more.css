@@ -3,11 +3,12 @@
 }
 
 .more-screen .icon-row {
+  width: 100%;
   margin-top: 35px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
   grid-template-rows: repeat(2, 65px);
-  column-gap: 35px;
-  row-gap: 55px;
+  column-gap: 0;
+  row-gap: 30px;
   padding: 0 20px;
 }
 .more-screen .icon-row__icon i {
@@ -16,6 +17,7 @@
 
 .more-screen .icon-row-title {
   color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
 }
 
 .more-suggestions {
@@ -33,7 +35,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 65px);
   padding: 0 10px;
-  column-gap: 20px;
+  width: 100%;
 }
 
 .more-suggestions__icon {
@@ -63,4 +65,5 @@
 .more-suggestions__icon-title {
   margin-top: 15px;
   color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
 }
