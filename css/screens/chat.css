@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 1000vh;
+  height: 500vh;
 }
 
 #chat-screen::-webkit-scrollbar {
@@ -17,6 +17,21 @@
   top: 0;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   position: relative;
   margin-top: 150px;
@@ -24,6 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn .8s linear;
 } 
 
 .chat__timestamp {
@@ -99,6 +115,7 @@
   align-items: center; 
   padding: 5px 25px;
   box-sizing: border-box;
+  transition: all .3s ease-in-out;
 }
 
 .write-message__column:first-child {
@@ -119,6 +136,10 @@
   height: 50px;
   border-radius: 20px;
   border: none;
+  transition: all .3s ease-in-out;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-bottom: 5px;
 }
 
 .write-message__column:last-child > i,      
@@ -144,4 +165,25 @@
 .write-message__column:last-child button:focus,
 .write-message__column:last-child button:active {
   outline:none;
+}
+
+.write-message:focus-within .write-message__column:first-child,
+.write-message:focus-within .fa-smile-wink,
+.write-message:focus-within button {
+  transition: opacity .3s ease-in-out;
+}
+
+.write-message:focus-within .write-message__column:first-child,
+.write-message:focus-within .fa-smile-wink,
+.write-message:focus-within button {
+  opacity: 0;
+}
+
+.write-message__column:last-child:focus-within input {
+  width: 96vw;
+  transform: translateX(-12.5%) translateY(-80px);
+}
+
+.write-message:focus-within {
+  transform: translateY(80px);
 }

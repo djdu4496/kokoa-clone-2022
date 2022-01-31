@@ -19,3 +19,16 @@
 .screen-header__icons i {
   margin-left: 30px;
 }
+
+@keyframes iconAnimation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icon:last-child i:hover {
+  animation: iconAnimation 1s linear infinite;
+}
