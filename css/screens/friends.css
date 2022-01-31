@@ -1,15 +1,41 @@
+@keyframes pullingFood {
+  0% {
+    transform: none;
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 #friends-display-link {
   display: block;
   text-align: center;
-  background-color: var(--gray);
+  background-color: #2DC0BD;
   padding: 15px 0;
   font-size: 18px;
   margin-bottom: 10px;
-  margin-top: -10px;
+  margin-top: -15px;
+  transition: all .3s ease-in-out;
+  animation: pullingFood .5s ease-in-out;
+  animation-delay: .3s;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 #friends-display-link i {
-  color: #d3d3d3;
+  color: #f5b639;
+  margin-right: 10px;
+}
+
+#friends-display-link span {
+  font-weight: 700;
+  font-size: 28px;
 }
 
 .fa-info-circle {
@@ -48,7 +74,7 @@
 }
 
 .splash-screen {
-  background-color: var(--yellow);
+  background-color: #2DC0BD;
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -56,8 +82,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 132px;
+  font-size: 100px;
   animation: hideSplashScreen .3s ease-in-out forwards;
   animation-delay: .5s;
   z-index: 999;
+}
+
+.splash-screen img {
+  height: 300px;
+  width: 80vw;
+  border-radius: 15px;
+}
+
+.friends-screen__channel .user-component {
+  margin-bottom: 25px;
 }

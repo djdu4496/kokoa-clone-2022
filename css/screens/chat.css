@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: white;
   height: 500vh;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .message-row__bubble {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.1);
   font-size: 18px;
   padding: 15px;
   margin-top: 10px;
@@ -150,11 +150,12 @@
 .write-message__column:last-child > i {
   top: 13px; /* 🗣 */
   right: 60px;
-  color: rgba(0, 0, 0, 0.3); 
+  color: var(--yellow);
 }               
 
 .write-message__column:last-child button { 
-  background-color: var(--yellow); 
+  background-color: #2DC0BD;
+  color: white;
   border: none;                   
   width: 45px;                    
   height: 45px;                   
@@ -181,7 +182,16 @@
 
 .write-message__column:last-child:focus-within input {
   width: 96vw;
-  transform: translateX(-12.5%) translateY(-80px);
+  transform: translateX(-13%) translateY(-80px);
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  color: black;
+}
+
+.write-message__column:last-child:focus-within input::placeholder {
+  font-size: 17px;
+  color: white;
+  font-weight: 700;
 }
 
 .write-message:focus-within {

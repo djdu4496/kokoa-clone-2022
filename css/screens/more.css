@@ -19,7 +19,7 @@
 
 
 .more-screen .icon-row__icon i {
-  color: royalblue;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .more-screen .icon-row-title {
@@ -64,12 +64,12 @@
   width: 55px;
   height: 55px;
   border-radius: 5px;
-  background-color: var(--yellow);
+  background-color: #2DC0BD;
 }
 
 .more-suggestions__icon-image i {
   font-size: 30px;
-  color: royalblue;
+  color: white;
 }
 
 .more-suggestions__icon-title {

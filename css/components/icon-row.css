@@ -7,6 +7,7 @@
   grid-template-rows: repeat(1, 65px);
   column-gap: 55px;
   padding: 0 5px;
+  margin-top: 10px;
 }
 .icon-row__icon {
   text-align: center;
@@ -18,4 +19,28 @@
   display: block;
   padding-top: 15px;
   text-align: center;
+}
+
+.icon-row-title{
+  min-width: max-content;
+}
+
+.find-icon-row {
+  margin-top: 30px;
+}
+
+.find-icon-row .icon-row__icon:first-child i {
+  color: var(--yellow);
+}
+
+.find-icon-row .icon-row__icon:nth-child(2) i {
+  color: orange;
+}
+
+.find-icon-row .icon-row__icon:nth-child(3) i {
+  color: plum;
+}
+
+.find-icon-row .icon-row__icon:last-child i {
+  color: gainsboro;
 }

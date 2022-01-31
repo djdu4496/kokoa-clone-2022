@@ -1,9 +1,11 @@
 .alt-screen-header {
   padding: var(--horizontal-space);
-  margin-top: 30px;
+  margin-top: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #2DC0BD;
+  color: white;
 }
 
 .alt-screen-header__column {
@@ -21,8 +23,10 @@
   align-items: center;
 }
 .alt-screen-header__title {
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 600;
+  min-width: max-content;
+  letter-spacing: 1px;
 }
 
 .alt-screen-header__column:nth-child(3) i:last-child {
