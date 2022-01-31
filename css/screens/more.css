@@ -7,10 +7,17 @@
   margin-top: 35px;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
   grid-template-rows: repeat(2, 65px);
-  column-gap: 0;
+  column-gap: 5%;
   row-gap: 30px;
   padding: 0 20px;
+  box-sizing: border-box;
 }
+
+.more-screen .icon-row__icon {
+  min-width: max-content;
+}
+
+
 .more-screen .icon-row__icon i {
   color: royalblue;
 }
@@ -24,6 +31,7 @@
   margin-top: 50px;
   padding-top: 35px;
   border-top: var(--main-border);
+  width: 100%;
 }
 
 .more-suggestions__title {
@@ -31,11 +39,13 @@
 }
 
 .more-suggestions__icons {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 65px);
   padding: 0 10px;
   width: 100%;
+  column-gap: 1%;
 }
 
 .more-suggestions__icon {
