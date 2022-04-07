@@ -20,4 +20,5 @@
 ### 🎸 etc
 - 비전공자였던 제가 만들었던 첫 (클론코딩) 프로젝트입니다.
 - '노마드 코더'에서 수강한 온라인 부트캠프 [📎 `코코아 챌린지 25기 우수작품`](https://nomadcoders.co/community/thread/1820)으로 선정됐습니다.
-- [📎 회고록](https://nomadcoders.co/community/thread/1762)
+- [📎 수강후기](https://nomadcoders.co/community/thread/1762)
+- [📎 회고록](https://github.com/djdu4496/kokoa-clone-2022/issues/3)
